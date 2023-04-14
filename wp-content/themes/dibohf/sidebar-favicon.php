@@ -1,0 +1,1 @@
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri();?>/static/img/favicon.ico">

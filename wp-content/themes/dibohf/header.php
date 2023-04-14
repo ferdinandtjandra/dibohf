@@ -1,5 +1,6 @@
 
     <meta charset="UTF-8">
+    <?php get_sidebar('favicon'); ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/pagination.css">
