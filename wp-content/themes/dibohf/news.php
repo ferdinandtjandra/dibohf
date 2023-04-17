@@ -55,7 +55,7 @@
                                 if ( $post_count <= 3 ) :
                                     // Display the first three posts on the first line
                                         if($post_count == 1):
-                                            echo '<a href="'.get_permalink().'">';
+                                            echo '<a href="'.get_permalink().'" id="blog_a"> ';
                                             echo '<div class="blog_block_l">';
                                             echo '<div class="blog_block_l_image" style="background-image:url('.get_field('thumbnail').');"></div>';
                                             echo '<div class="blog_block_l_text">';
