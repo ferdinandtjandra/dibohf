@@ -1,0 +1,5 @@
+#Basic Auth
+AuthName "Please Enter Username and Password"
+AuthType Basic
+AuthUserFile /var/www/html/dibohf/wp-admin/.htpasswd
+Require valid-user
