@@ -153,7 +153,7 @@ if ( $query_pickup->have_posts() ) :
         'orderby' => 'ID',
     );
     $query = new WP_Query( $args );
-    $total_post = $loopPage->post_count;
+    $total_post = $query->post_count;
     // echo $total_post.'<br>';
     if ( $query->have_posts() ) :
         $count = 0;
