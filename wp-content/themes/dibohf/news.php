@@ -64,7 +64,7 @@
                                                     echo '<span class="tag">'.$term->name.'</span>';
                                                 }
                                             endif;
-                                            echo the_title('<h3>', 'bif</h3>');
+                                            echo the_title('<h3>', '</h3>');
                                             echo '<p>'.substr(get_the_excerpt(), 0, 200).'</p>';
                                             echo '</div></div></a>';
                                         else:
@@ -77,7 +77,6 @@
                                                     echo '<span class="tag">'.$term->name.'</span>';
                                                 }
                                             endif;
-                                            echo the_title('<h3>', 'small</h3>');
                                             echo '<p>'.substr(get_the_excerpt(), 0, 200).'</p>';
                                             echo '</div></a></div>';
                                         endif;
@@ -93,7 +92,6 @@
                                             echo '<span class="tag">'.$term->name.'</span>';
                                         }
                                     endif;
-                                    echo the_title('<h3>', 'oko</h3>');
                                     echo '<p>'.substr(get_the_excerpt(), 0, 200).'</p>';
                                     echo '</div></a></div>';
                                 endif;

@@ -143,51 +143,6 @@ if ( $query_pickup->have_posts() ) :
     wp_reset_postdata();
 ?>
 
-<!-- mainitem-->
-<div class="mainitem">
-    <a id=main_a href="#">
-        <div class="mainitem_left"  style="background-image: url(<?php echo get_template_directory_uri();?>/static/img/chair_mainitem1.png);">
-            <div class="mainitem_text">
-                <h3>dibohf chair 2023</h3>
-                <p class="value">¥32,300</p>
-                <p class="mainitem_tag">NEW</p>
-            </div>
-        </div>
-    </a>
-    
-    <div class="mainitem_middle">
-        <a id="mainitem_middle_a" href="#">
-            <div class="mainitem_middle_top"  style="background-image: url(<?php echo get_template_directory_uri();?>/static/img/chair_mainitem2.png);">
-                <div class="mainitem_text">
-                    <h3>dibohf chair 2023 OLIGINAL</h3>
-                    <p class="value">¥32,300</p>
-                    <p class="mainitem_tag">NEW</p>
-                </div>
-            </div> 
-        </a>
-        <a id="mainitem_middle_a" href="#">
-            <div class="mainitem_middle_bottom"  style="background-image: url(<?php echo get_template_directory_uri();?>/static/img/chair_mainitem3.png);">
-                <div class="mainitem_text">
-                    <h3>dibohf chair</h3>
-                    <p class="value">¥32,300</p>
-                    <p class="mainitem_tag">2023 MODEL</p>
-                </div>
-            </div> 
-        </a>
-    </div>
-    <a id=main_a href="#">
-        <div class="mainitem_right"  style="background-image: url(<?php echo get_template_directory_uri();?>/static/img/chair_mainitem4.png);">
-            <div class="mainitem_text">
-                <h3>dibohf chair 2022</h3>
-                <p class="value">¥32,300</p>
-                <p class="mainitem_tag">2022 MODEL</p>
-            </div>
-        </div>
-    </a>
-    </div>
-    
-    <!-- mainitem-->
-
 <!-- subitem -->
 <div class="subitem">
 <?php
