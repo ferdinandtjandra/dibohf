@@ -119,3 +119,19 @@ function pagination_column($pages = '', $loopPage, $range = 2){
 
   }
 }
+
+function custom_sort_categories($clauses, $query) {
+    global $wpdb;
+
+    if (isset($query->query_vars['meta_query'])) {
+        $meta_query = $query->query_vars['meta_query'];
+        $clauses['join'] .= "
+            LEFT OUTER JOIN {$wpdb->termmeta}
+            ON {$wpdb->terms}.term_id={$wpdb->termmeta}.term_id
+            AND {$wpdb->termmeta}.meta_key='{$meta_query[0]['key']}'";
+
+        $clauses['orderby'] = "ABS({$wpdb->termmeta}.meta_value+0) {$query->query_vars['order']}";
+    }
+
+    return $clauses;
+}

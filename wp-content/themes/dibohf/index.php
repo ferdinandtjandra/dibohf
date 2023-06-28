@@ -4,7 +4,46 @@
     <title>アート性の高いレジンを使った高級インテリア|dibof</title>
     <meta name="description" content="天然素材×レジンを使った一点モノのアートインテリア。特別な素材・これまでにないユニークなデザインを高級感溢れるレジン素材で表現をしたインテリアです。椅子・テーブル・ドアなど普通では物足りないあなたのためのインテリア|dibof">
     <?php get_header(); ?>
+<script>
+$(function{
+  $(".common_wrapper").css("display","none");
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var videoElement = document.getElementById("fv-video");
+  var aftermovieElement = document.querySelector(".aftermovie");
+  var commonWrapperElement = document.querySelector(".common_wrapper");
 
+  // common_wrapperを非表示にする
+  commonWrapperElement.style.display = "none";
+
+  // 動画のURLを設定
+  var url = window.innerWidth >= 768
+    ? "https://www.dibohf.com/wp-content/uploads/2023/06/fv_animation_pc.mp4"
+    : "https://www.dibohf.com/wp-content/uploads/2023/06/fv_animation_sp_1.mp4";
+  videoElement.querySelector("source").src = url;
+
+  // 動画の再生が終わった時の処理
+  videoElement.addEventListener("ended", function() {
+    videoElement.parentNode.classList.add("fade-out");
+    aftermovieElement.classList.add("fade-in");
+    commonWrapperElement.style.display = "block";
+  });
+
+  // 動画の再生を開始
+  videoElement.load();
+  videoElement.play();
+
+  // 一定時間経過後にcommon_wrapperを表示する
+  var delayTime = 500; // 表示までの遅延時間（ミリ秒）
+  setTimeout(function() {
+    commonWrapperElement.style.display = "block";
+  }, delayTime);
+});
+
+
+</script>
 <body>
     <div id="wrapper">
     <!-- header -->
@@ -26,8 +65,13 @@
                    </ul>
                 </nav>
         </header>
-    <!-- header -->
-        <div class="fv">
+        <!-- header -->
+        <div id="fv" class="fv">
+          <video id="fv-video" autoplay muted playsinline>
+            <source src="" type="video/mp4">
+          </video>
+        </div>
+        <div class="fv aftermovie">
             <div class="fv_left">
                 <div class="fv_left_textbox">
                     <h2>dibohf</h2>
@@ -46,8 +90,7 @@
                             </div>
                     </div>
                      </a>
-                <!--fv_right_l_top-->
-
+                <!--fv_right_l_top-->	
                     <!--fv_right_l_middle-->
                     
                     <div class="fv_right_l_middle">
@@ -205,8 +248,7 @@
                     <img src="<?php echo get_template_directory_uri();?>/static/img/itemlist_text.png" alt="">
                 </div>
                 <div class="itemlist_imagebox">
-
-                    <?php 
+<?php 
                         $categories = get_categories(array('exclude' => '1'));
                         foreach ($categories as $category) {
 
@@ -218,7 +260,7 @@
                     ?>
 
                             <div class="itemlist_image" style="background-image:linear-gradient(rgba(51,51,51,0.1),rgba(51,51,51,0.1)),url(<?php echo $category_image;?>)">
-                                <a href="' . get_category_link($category->term_id) . '">
+                                <a href="<?php echo get_category_link($category->term_id); ?>">
                                     <h3><?php echo strtoupper($category->name); ?></h3>
                                     <div class="itemlist_array">
                                         <a href="<?php echo get_category_link($category->term_id); ?>">
@@ -231,7 +273,20 @@
                     <?php
                         }
                     ?>
-                     
+               
+					              <div class="itemlist_image" style="background-image:linear-gradient(rgba(51,51,51,0.1),rgba(51,51,51,0.1)),url(https://www.dibohf.com/wp-content/uploads/2023/06/door2.jpg)">
+                                <a href="https://www.dibohf.com/blogs/dibohf-door/">
+                                    <h3>Door</h3>
+                                    <div class="itemlist_array">
+                                        <a href="https://www.dibohf.com/blogs/dibohf-door/ ">
+                                            <img src="<?php echo get_template_directory_uri();?>/static/img/itemlist_array.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri();?>/static/img//itemlist_array2.png" alt="">
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+					
+				
                 </div>
             
         </div>
@@ -282,8 +337,8 @@
                             'post_type' => 'blogs',
                             'post_status' => 'publish',
                             'order' => 'DESC',
-                            'orderby' => 'ID',
-                            'posts_per_page' => 7,
+										'orderby' =>'date',
+							        'posts_per_page' => 7,
                         );
                         $query = new WP_Query( $args );
                         if ( $query->have_posts() ) :

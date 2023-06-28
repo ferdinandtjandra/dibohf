@@ -26,7 +26,10 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent;
 }
-
+.article img {
+	width:100%;
+	height:auto;
+}
 /* line 32, ../scss/reset.scss */
 body {
   line-height: 1;

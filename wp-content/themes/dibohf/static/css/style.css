@@ -1,4 +1,3 @@
-
 /* ページ名にmargin_bottom:80px(header,footer,くっついているところ以外) */
 /* all_rule*/
 * {
@@ -280,7 +279,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 395px;
-    background-image: url(../img/fv_voice_cover.png);
+	 background-image: url(https://www.dibohf.com/wp-content/uploads/2023/04/fv_voice_cover.png);
+    #background-image: url(../img/fv_voice_cover.png);
     background-position: center;
     background-size: cover;
     margin-top: 16px;
@@ -290,7 +290,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 356px;
-    background-image: url(../img/fv_aboutus_cover.png);
+	 background-image: url(https://www.dibohf.com/wp-content/uploads/2023/04/fv_aboutus_cover.png);
+    #background-image: url(../img/fv_aboutus_cover.png);
     background-position: center;
     background-size: cover;
 }
@@ -300,7 +301,8 @@ header {
     align-items: center;
     width: calc((100% - 32px) / 2);
     height: 283px;
-    background-image: url(../img/fv_company_cover.png);
+	background-image: url(https://www.dibohf.com/wp-content/uploads/2023/04/fv_company_cover.png);
+    #background-image: url(../img/fv_company_cover.png);
     background-position: center;
     background-size: cover;
     margin-top: -112px;
@@ -1531,6 +1533,74 @@ video {
 }
 /*underlayer_footer 768px*/
 
-/*ham_menu*/
 
- 
+/*ham_menu*/
+#fv {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 770px) {
+#fv {
+  display: block;
+  height:100vh;
+  width: 100%;
+  position: fixed;
+
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+  #fv-video {
+	  margin-top:120px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+#fv.fade-out {
+  opacity: 0;
+  display: none;
+}
+
+#fv-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*.aftermovie {
+ display: none;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.aftermovie.fade-in {
+  display: flex;
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+.aftermovie.fade-in .fv_left,
+.aftermovie.fade-in .fv_right {
+  flex-basis: 100%;
+}
+*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
