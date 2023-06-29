@@ -36,7 +36,7 @@
                             'post_type' => 'blogs',
                             'post_status' => 'publish',
                             'order' => 'DESC',
-                            'orderby' => 'ID',
+                            'orderby' => 'date',
                             'posts_per_page' => 10,
                         );
                         $query = new WP_Query( $args );

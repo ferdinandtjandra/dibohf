@@ -249,7 +249,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <div class="itemlist_imagebox">
 <?php 
-                        $categories = get_categories(array('exclude' => '1'));
+
+                        $categories = get_categories([
+                                            'orderby' => 'meta_value_num',
+                                            'meta_key' => 'sort_num',
+                                            'order' => 'ASC'
+                                         ]);
                         foreach ($categories as $category) {
 
                             if ($category_count >= 4) {
@@ -273,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <?php
                         }
                     ?>
-               
+               <!--
 					              <div class="itemlist_image" style="background-image:linear-gradient(rgba(51,51,51,0.1),rgba(51,51,51,0.1)),url(https://www.dibohf.com/wp-content/uploads/2023/06/door2.jpg)">
                                 <a href="https://www.dibohf.com/blogs/dibohf-door/">
                                     <h3>Door</h3>
@@ -286,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </a>
                             </div>
 					
-				
+		-->		
                 </div>
             
         </div>
