@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>アート性の高いレジンを使った高級インテリア|dibof</title>
-    <meta name="description" content="天然素材×レジンを使った一点モノのアートインテリア。特別な素材・これまでにないユニークなデザインを高級感溢れるレジン素材で表現をしたインテリアです。椅子・テーブル・ドアなど普通では物足りないあなたのためのインテリア|dibof">
+    <title>アート性の高いレジンを使った高級インテリア|dibohf</title>
+    <meta name="description" content="天然素材×レジンを使った一点モノのアートインテリア。特別な素材・これまでにないユニークなデザインを高級感溢れるレジン素材で表現をしたインテリアです。椅子・テーブル・ドアなど普通では物足りないあなたのためのインテリア|dibohf">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/article.css">
     <?php get_header(); ?>
 <body>

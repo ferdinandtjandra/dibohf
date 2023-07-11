@@ -7,8 +7,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dibofを運営する会社情報です。</title>
-    <meta name="description" content="dibofを運営する会社の情報です。dibofはこれまでのシーンになかった天然素材とレジンを組み合わせたアート性の高いインテリアです。">
+    <title>dibohfを運営する会社情報です。</title>
+    <meta name="description" content="dibohfを運営する会社の情報です。dibohfはこれまでのシーンになかった天然素材とレジンを組み合わせたアート性の高いインテリアです。">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/company.css">
     <?php get_header(); ?>
 <body>

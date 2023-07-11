@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dibofのブログ「<?php wp_title('', true, 'right') ?>」</title>
-    <meta name="description" content="dibofのブログページです <?php wp_title('', true, 'right')?> というタイトルで記事を書きました。">
+    <title>dibohfのブログ「<?php wp_title('', true, 'right') ?>」</title>
+    <meta name="description" content="dibohfのブログページです <?php wp_title('', true, 'right')?> というタイトルで記事を書きました。">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/article.css">
     <?php get_header(); ?>
 <body>

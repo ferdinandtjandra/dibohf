@@ -6,8 +6,8 @@
         $cat_name = $currCat->name;
       
     ?>
-    <title>アートインテリアdlbofの<?php echo strtoupper($cat_name); ?>のページです。</title>
-    <meta name="description" content="<?php echo strtoupper($cat_name); ?>の高級インテリアdibofは天然素材にレジンを合わせた世界で一つだけの一点もののアートインテリアです。高級感溢れる<?php echo strtoupper($cat_name); ?>をお探しならdibofをご検討ください">
+    <title>アートインテリアdibohfの<?php echo strtoupper($cat_name); ?>のページです。</title>
+    <meta name="description" content="<?php echo strtoupper($cat_name); ?>の高級インテリアdibohfは天然素材にレジンを合わせた世界で一つだけの一点もののアートインテリアです。高級感溢れる<?php echo strtoupper($cat_name); ?>をお探しならdibohfをご検討ください">
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/itemlist.css">
     <?php get_header(); ?>

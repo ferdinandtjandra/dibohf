@@ -6,8 +6,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dibofを購入した方々の声</title>
-    <meta name="description" content="dibofを購入した方々の声をまとめました。個人から法人までご満足いただいております">
+    <title>dibohfを購入した方々の声</title>
+    <meta name="description" content="dibohfを購入した方々の声をまとめました。個人から法人までご満足いただいております">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/voice2.css">
     <?php get_header(); ?>
 <body>
@@ -39,12 +39,6 @@
                         <h3><?php the_field('BlockTitle1'); ?></h3>
                         <p><?php the_field('BlockExplain1'); ?></p>
                     </div>
-                    <div class="balloon">
-                        <div class="balloon_box">
-                            <p class="balloon_text"><?php the_field('BlockVoice1'); ?></p>
-                            <p class="balloon_button"><a href="#voice_01">詳しくみる</a></p>
-                        </div>
-                    </div>
                 </div>
                 <div class="voice_main_box_wrapper">
                     <div class="voice_main_box">
@@ -56,12 +50,6 @@
                         </div>
                         <h3><?php the_field('BlockTitle2'); ?></h3>
                         <p><?php the_field('BlockExplain2'); ?></p>   
-                    </div>
-                    <div class="balloon">
-                        <div class="balloon_box">
-                            <p class="balloon_text"><?php the_field('BlockVoice2'); ?></p>
-                            <p class="balloon_button"><a href="#voice_02">詳しくみる</a></p>
-                        </div>
                     </div>
                 </div>
                 <div class="voice_main_box_wrapper">
@@ -75,12 +63,6 @@
                         <h3><?php the_field('BlockTitle3'); ?></h3>
                         <p><?php the_field('BlockExplain3'); ?></p>
                     </div>
-                    <div class="balloon">
-                        <div class="balloon_box">
-                            <p class="balloon_text"><?php the_field('BlockVoice3'); ?></p>
-                            <p class="balloon_button"><a href="#voice_03">詳しくみる</a></p>
-                        </div>
-                    </div>
                 </div>
                 <div class="voice_main_box_wrapper">
                     <div class="voice_main_box">
@@ -93,12 +75,6 @@
                         <h3><?php the_field('BlockTitle4'); ?></h3>
                         <p><?php the_field('BlockExplain4'); ?></p>
                     </div>
-                    <div class="balloon">
-                        <div class="balloon_box">
-                            <p class="balloon_text"><?php the_field('BlockVoice4'); ?></p>
-                            <p class="balloon_button"><a href="#voice_04">詳しくみる</a></p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- voicesub-->
@@ -106,39 +82,7 @@
                 <h3 class="voice_sub_title">お客様の声</h3>
             </div>
             <div class="voice_sub_contents">
-                <div class="voice_sub_box">
-                    <a id="voice_01"></a> 
-                    
-                    <div class="voice_sub_box_image" style="background-image: url(<?php echo get_field('BlockExplainImage1'); ?>);">
-                    </div>
-                    <div class="voice_sub_box_text">
-                    <?php the_field('BlockVoiceExplain1'); ?>
-                    </div>  
-                </div>
-                <div class="voice_sub_box">
-                    <a id="voice_02"></a>
-                    <div class="voice_sub_box_image" style="background-image: url(<?php echo get_field('BlockExplainImage2'); ?>);">
-                    </div>
-                    <div class="voice_sub_box_text">
-                    <?php the_field('BlockVoiceExplain2'); ?>
-                    </div>  
-                </div>
-                <div class="voice_sub_box">
-                    <a id="voice_03"></a>
-                    <div class="voice_sub_box_image" style="background-image: url(<?php echo get_field('BlockExplainImage3'); ?>);">
-                    </div>
-                    <div class="voice_sub_box_text">
-                    <?php the_field('BlockVoiceExplain3'); ?>
-                    </div>  
-                </div>
-                <div class="voice_sub_box">
-                    <a id="voice_04"></a>
-                    <div class="voice_sub_box_image" style="background-image: url(<?php echo get_field('BlockExplainImage4'); ?>);">
-                    </div>
-                    <div class="voice_sub_box_text">
-                    <?php the_field('BlockVoiceExplain4'); ?>
-                    </div>  
-                </div>
+                <?php the_field('BlockVoiceExplain'); ?>
             </div>
             <!-- voice_sub--> 
 

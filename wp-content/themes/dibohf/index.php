@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>アート性の高いレジンを使った高級インテリア|dibof</title>
-    <meta name="description" content="天然素材×レジンを使った一点モノのアートインテリア。特別な素材・これまでにないユニークなデザインを高級感溢れるレジン素材で表現をしたインテリアです。椅子・テーブル・ドアなど普通では物足りないあなたのためのインテリア|dibof">
+    <title>アート性の高いレジンを使った高級インテリア|dibohf|ディボフ</title>
+    <meta name="description" content="天然素材×レジンを使った一点モノのアートインテリア。特別な素材・これまでにないユニークなデザインを高級感溢れるレジン素材で表現をしたインテリアです。椅子・テーブル・ドアなど普通では物足りないあなたのためのインテリア|dibohf">
     <?php get_header(); ?>
 <script>
 $(function{
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <header>
             <div class="header_logo">
                 <a href="<?php echo site_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri();?>/static/img/logo1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/static/img/logo2.png" alt="">
                 </a>
             </div>
             <button class="menu_btn">
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <a href="#">
                             <div class="contact_btn">
-                                <p>CONTACT</p>
+                                <p><a href="https://www.dibohf.com/contact/">CONTACT</a></p>
                             </div>
                         </a>
                     </div>
@@ -251,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <?php 
 
                         $categories = get_categories([
+											'exclude' => '1',
                                             'orderby' => 'meta_value_num',
                                             'meta_key' => 'sort_num',
                                             'order' => 'ASC'
@@ -278,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <?php
                         }
                     ?>
-               <!--
+               
 					              <div class="itemlist_image" style="background-image:linear-gradient(rgba(51,51,51,0.1),rgba(51,51,51,0.1)),url(https://www.dibohf.com/wp-content/uploads/2023/06/door2.jpg)">
                                 <a href="https://www.dibohf.com/blogs/dibohf-door/">
                                     <h3>Door</h3>
@@ -291,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </a>
                             </div>
 					
-		-->		
+		
                 </div>
             
         </div>
@@ -316,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <h2>INSTAGRM</h2>
                         <p>@dibohf</p>
                         <p class="insta-description">インスタグラムの公式アカウントでは最新のコーディネートを更新しています。</p>
-                        <button>Follow Us</button>
+                        <a href="https://www.instagram.com/dibohf/" target="_blank"><button>Follow Us</button></a>
                     </div>
                     <div class="insta_right">
                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>

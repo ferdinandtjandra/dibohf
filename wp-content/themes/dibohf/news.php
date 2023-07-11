@@ -6,8 +6,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dibofのニュース一覧ページです</title>
-    <meta name="description" content="dibofの最新のニュースを紹介します。">
+    <title>dibohfのニュース一覧ページです</title>
+    <meta name="description" content="dibohfの最新のニュースを紹介します。">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/article.css">
     <?php get_header(); ?>
 <body>

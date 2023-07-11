@@ -1,4 +1,4 @@
-<div class="underlayer_footer">
+<!--<div class="underlayer_footer">
     <div class="underlayer_footer_block">
         <div class="underlayer_footer_info">
             <h2>dibohf</h2>
@@ -16,4 +16,4 @@
         <p><a href="<?php echo site_url()."/company"; ?>" style="color: #fff">COMPANY</a></p>
         </div>
     </div>
-</div>
+</div>-->

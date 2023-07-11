@@ -5,8 +5,8 @@
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>わたしたちについて|dibof</title>
-    <meta name="description" content="dibofブランドを制作するわたしたちについてのページです。">
+    <title>わたしたちについて|dibohf</title>
+    <meta name="description" content="dibohfブランドを制作するわたしたちについてのページです。">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/aboutus.css">
     <?php get_header(); ?>
 <body>

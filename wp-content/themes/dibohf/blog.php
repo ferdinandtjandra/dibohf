@@ -6,8 +6,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dibofのブログ一覧ページです</title>
-    <meta name="description" content="高級インテリア dibofのブログ一覧ページです">
+    <title>dibohfのブログ一覧ページです</title>
+    <meta name="description" content="高級インテリア dibohfのブログ一覧ページです">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/article.css">
     <?php get_header(); ?>
 <body>

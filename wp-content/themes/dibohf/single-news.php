@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title><?php wp_title('', true, 'right') ?>|news</title>
-    <meta name="description" content="dibofのnews「<?php wp_title('', true, 'right')?>」">
+    <meta name="description" content="dibohfのnews「<?php wp_title('', true, 'right')?>」">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/article.css">
     <?php get_header(); ?>
 <body>
