@@ -51,7 +51,7 @@ function wpcf7_reflection_form_tag_handler( $tag ) {
 
 	$content = array_reduce(
 		$values,
-		static function ( $carry, $item ) use ( $tag ) {
+		function ( $carry, $item ) use ( $tag ) {
 			$output_tag = sprintf(
 				'<output %1$s>%2$s</output>',
 				wpcf7_format_atts( array(

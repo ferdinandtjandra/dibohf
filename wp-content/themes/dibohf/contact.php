@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>dibohfで接続する会社の連絡先。</title>
+    <title>dibohf(ディボフ)を運営するの連絡先。</title>
     <meta name="description" content="dibohfを運営する会社の情報です。dibohfはこれまでのシーンになかった天然素材とレジンを組み合わせたアート性の高いインテリアです。">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/static/css/company.css">
     <?php get_header(); ?>

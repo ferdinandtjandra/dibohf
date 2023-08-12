@@ -134,7 +134,7 @@ function wpcf7_array_flatten( $input ) {
  */
 function wpcf7_exclude_blank( $input ) {
 	$output = array_filter( $input,
-		static function ( $i ) {
+		function ( $i ) {
 			return isset( $i ) && '' !== $i;
 		}
 	);

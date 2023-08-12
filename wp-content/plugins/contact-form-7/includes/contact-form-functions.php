@@ -231,7 +231,7 @@ function wpcf7_contact_form_tag_func( $atts, $content = null, $code = '' ) {
 		);
 	}
 
-	$callback = static function ( $contact_form, $atts ) {
+	$callback = function ( $contact_form, $atts ) {
 		return $contact_form->form_html( $atts );
 	};
 

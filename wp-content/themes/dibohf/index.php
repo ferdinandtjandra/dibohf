@@ -60,8 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
                    <ul>
                     <li><a href="<?php echo site_url(); ?>">TOP</a></li>
                     <li><a href="<?php echo site_url()."/about-us"; ?>">ABOUT US</a></li>
-                    <li><a href="<?php echo site_url()."/voice"; ?>"">VOICE</a></li>
+                    <li><a href="<?php echo site_url()."/voice"; ?>">VOICE</a></li>
                     <li><a href="<?php echo site_url()."/company"; ?>">COMPANY</a></li>
+						   <li><a href="<?php echo site_url()."/contact"; ?>">CONTACT</a></li>
                    </ul>
                 </nav>
         </header>
@@ -153,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <a href="<?php echo site_url()."/about-us"; ?>"><li>ABOUT US</li></a>
                             <a href="<?php echo site_url()."/voice"; ?>""><li>VOICE</li></a>
                             <a href="<?php echo site_url()."/company"; ?>"><li>COMPANY</li></a>
+										<a href="<?php echo site_url()."/contact"; ?>"><li>CONTACT</li></a>								  
                         </ul>
                         <div class="sns_icon">
                             <a href="#"><img src="<?php echo get_template_directory_uri();?>/static/img/instagram_icon.png"></a>

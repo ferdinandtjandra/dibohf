@@ -39,7 +39,7 @@ function wpcf7_flamingo_submit( $contact_form, $result ) {
 	// Exclude do-not-store form-tag values.
 	$posted_data = array_filter(
 		$posted_data,
-		static function ( $name ) use ( $contact_form ) {
+		function ( $name ) use ( $contact_form ) {
 			return ! $contact_form->scan_form_tags( array(
 				'name' => $name,
 				'feature' => 'do-not-store',

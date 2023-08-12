@@ -59,7 +59,7 @@ add_action(
 
 function wpcf7_enqueue_block_editor_assets() {
 	$contact_forms = array_map(
-		static function ( $contact_form ) {
+		function ( $contact_form ) {
 			return array(
 				'id' => $contact_form->id(),
 				'slug' => $contact_form->name(),
